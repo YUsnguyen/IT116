@@ -5,31 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
+    <!--Reminder for self: <title> element names the web page's Tab-->
 </head>
 
 
 <body>
 
+    <!--Used semantics to format <table> element WITHIN <body> element
+        Used the following elements within the <table> element to create a table-->
     <table>
 
+    <!--Used semantics to input <thead> element within <table> element. <thead> formats a row of header cells w/in a table
+        Elements <tr>, <th>, are formatted w/in <thead> for page's header input-->   
         <thead>
 
+<!--<tr> element used within <thead> to format cell info (body text and headers) in a row
+    <th> element used to make cell info (in white) appear bolded, to signify as header info
+    rowspan attribute is attached to <th> element to change cell width, value (in orange) is the amount of rows a cell should expand
+    All cell info (including headers) fall w/in <tr> element to fill out that row-->
            <tr>
                 <th rowspan="2">Pokemon</th>
                 <th rowspan="2">Type</th>
                 <th rowspan="2">Abilities</th>
                 <th rowspan="2">Weakness</th>
+                <th rowspan="2">Evolution</th>
            </tr>
 
         </thead>
 
+    <!--<tbody> element used to format body cells w/in a table, to hold body info-->    
         <tbody>
 
+    <!--<tr> again is used w/in <tbody> through semantics to format/hold body text/info in a row. 4 sets of <tr> made to hold 4 different Pokemon's info
+        Used semantics to format <td> element within <tr> element
+        <td> element is used to input body info (in white) within the row of cells, below each relative header text/info
+        5 <td> elements used to fill out the 5 aspects for each Pokemon as listed in <th>-->
+             
             <tr>
-                <td>Info 1</td>
-                <td>Info 2</td>
-                <td>Info 3</td>
-                <td>Info 4</td>
+                <td>Spoink</td>
+                <td>Psychic</td>
+                <td>Gluttony</td>
+                <td>Ghost</td>
+                <td>Grumpig</td>
+                
+            </tr>
+            
+            <tr>
+                <td>Togepi</td>
+                <td>Fairy</td>
+                <td>Hustle</td>
+                <td>Poison</td>
+                <td>Togetic</td>
+
+            </tr>
+
+            <tr>
+                <td>Squirtle</td>
+                <td>Water</td>
+                <td>Torrent</td>
+                <td>Electric</td>
+                <td>Blastoise</td>
+
+            </tr>
+
+            <tr>
+                <td>Psyduck</td>
+                <td>Water</td>
+                <td>Damp</td>
+                <td>Grass</td>
+                <td>Golduck</td>
+
             </tr>
 
         </tbody>   
