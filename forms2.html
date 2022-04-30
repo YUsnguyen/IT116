@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Food</title>
+</head>
+
+<!--header created for website content: "Please fill out out the form below"-->
+<h1>Please fill out the form below</h1>
+
+<body>
+
+<!--<form> element place within <body> content; form element used to create forms on a website, always followed up by action attribute and value in between ""
+    for ex: "/nombres" is part of the code that will transfer data from the home page to root page tag-->    
+    <form action="/nombres">
+
+<!--<p> tag to create new paragraph
+    <label> tag to create caption label to <input> tag fx. Both "for" and "id" attributes have values "firstname" to bind <label> tag to <input> tag
+    <label> given content "First Name" as caption on website
+    <input> tag has "type" attribute to dictate type of input data of <input> tag, "text" is the value
+    placeholder attribute has "First Name" shown as an opaque caption w/in input box, name attribute titles the form, and will show up in URL form data, once data is submitted
+    "minlength" & "maxlength" attributes have value inputs that are numerical of >1 for character limit restriciton-->        
+        <p>
+            <label for="firstname">First Name:</label>
+            <input id="firstname" type="text" placeholder="First Name" name="firstnombre" minlength="1" maxlength="25">
+        </p>    
+
+ <!--<label> tag to create caption label to <input> tag fx. Both "for" and "id" attributes have values "lastname" to bind <label> tag to <input> tag
+     <label> given content "Last Name:" as caption on website
+     <input> tag has "type" attribute to dictate type of input data of <input> tag, "text" is the value   
+     placeholder attribute has "Last Name" shown as an opaque caption w/in input box, name attribute titles the form, and will show up in URL form data, once data is submitted
+     "minlength" & "maxlength" attributes have value inputs that are numerical of >1 for character limit restriciton
+    -->       
+        <p>
+            <label for="lastname">Last Name:</label>
+            <input id="lasname" type="text" placeholder="Last Name" name="lastnombre" minlength="1" maxlength="25">
+        </p>
+
+<!--<label> tag to create caption label to <select> tag fx. Both "for" and "id" attributes have values "whatfood" to bind <label> tag to <select> tag
+    <label> given content "Which food would you like to eat?" as caption on website
+    <select> tag used to create a pull down menu on web page for end user to select an option, given through <option> tags
+    name attribute titles the form, and will show up in URL form data, once data is submitted     
+    <option> tag presents value attribute input for different choices for user to choose from, titled within each respective content
+    value attribute like the name attribute titles the input date from <option> tag, value input from value attribute whill show up in URL form data, once submitted
+    -->        
+        <p>
+            <label for="whatfood">Which food would you like to eat?</label>
+
+            <select name="foods" id="whatfood">
+                <option value="Pho">Pho</option>
+
+                <option value="Ramen">Ramen</option>
+
+                <option value="thai">Pad Thai</option>
+            </select>
+        </p>
+
+<!--<label> tag to create caption label to <textarea> tag fx. Both "for" and "id" attributes have values "allergies" to bind <label> tag to <textarea> tag
+    <label> given content "Do you have any allergies?" as caption on website
+    <textarea> tag forms a text box for end user to input text in, the tag has attributes: "row" & "cols" to input numeric value > 0 to change box dimensions
+-->        
+        <p>
+            <label for="allergies">Do you have any allergies?</label>
+            <textarea id="allergies" name="textArea" rows="15" cols="15" placeholder="Input Allergies Here"></textarea>
+
+        </p>
+
+<!--button tag used to create interactive button
+    "type" attribute used to indicate value of submit being used. The fx of this button, will submit all data that was input within the content of this form
+    labeled value "Send"-->        
+<button type="submit">Send</button>
+
+    </form>
+    
+</body>
+</html>
