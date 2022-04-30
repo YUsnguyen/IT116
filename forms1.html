@@ -10,12 +10,22 @@
 
 
 <body>
+  
+<!--section element used to organize web content into.. sections-->
     <section>
 
+<!--h1 element used to make header-->
     <h1>Username & Password Inputs</h1>
 
+<!--form element used to create forms on a website, always followed up by action attribute and value in between ""
+    for ex: "/Sharon" is part of the code that will transfer data from the home page to root page-->
         <form action="/Sharon">
 
+<!--paragraph tag used to help organize/section off web content
+    <label> tag used to create a visible label on web page for end user to see; it comes w/ "for" attribute which is value that can be named to dev's liking. IT MUST MATCH ID ATTRIBUTE, the content in white is the actual caption
+    <input> tag used to create a small text prompt for end user to input data into. "id" attribute BINDS input tag to the label tag through "for" attribute, this allows input tag to function and render that the input data
+    "type" attribute dictates what type input fx and data is used, in this case, the value is text. "placeholder" attribute used as an opaque visual textual cue for the text input box on browser
+    "name" attribute titles the form, and will show up in URL form data, once data is submitted-->
             <p>
                 <label for="Username">Enter A Name:</label>
                 <input id="Username" type="text" placeholder="Sharon" name="Username">
@@ -26,22 +36,33 @@
                 <label for="Password">Enter Password:</label>
                 <input id="Password" type="text" placeholder="SharonPassword" name="Password">
             </p>
-
+<!--button element used to create a visual and interactive button on web page, labeled by its contents-->
             <button>Submit Button</button>
+           
 
         </form>
 
     </section>   
 
+<!--second section marked right after the end tag for the first form tag-->
     <section>
+<!--h1 header to title second form section-->        
         <h1>Query Strings</h1>
 
+<!--another form tag used to create form, action attribute followed by a URL link within the value. <button> tag will be directed to the URL link
+    <input> tag used to create a prompt for end user to input data. "type" attribute dictates what kind of input data is used. text value for data in text form to be submitted
+    "name" attribute used again to title form, to be shown in URL form data, value = q for query, must be q to function-->
             <form action="https://www.reddit.com/search/">
-            <input type="text" name="q">
-            <button>Search Reddit</button>
+
+                <input type="text" name="q">
+                <button>Search Reddit</button>
 
             </form>
 
+<!--separate form, requires new form opening and closing tags, same attributes and function as the last
+    <button> tag labeled as Search Youtube in content, to prompt user to search a Youtube Video, and be directed to Youtube search result through link provided
+     <input> tag used to create a prompt for end user to input data. "type" attribute dictates what kind of input data is used. text value for data in text form to be submitted
+    "name" attribute used again to title form, to be shown in URL form data, value = q for query, must be q to function    -->            
             <form action="https://www.youtube.com/results?search_query=">
         
                 <input type="text" name="q">
@@ -49,6 +70,10 @@
 
             </form>
 
+<!--separate form, requires new form opening and closing tags, same attributes and function as the last
+    <button> tag labeled as Search Google in content, to prompt user to search in Google, and be directed to Google search result through link provided
+    <input> tag used to create a prompt for end user to input data. "type" attribute dictates what kind of input data is used. text value for data in text form to be submitted
+    "name" attribute used again to title form, to be shown in URL form data, value = q for query, must be q to function     -->  
             <form action="https://www.google.com/search">
 
                 <input type="text" name="q">
@@ -58,37 +83,120 @@
 
         </section>
 
-    <section>
+<section>
+
+<!--section tag used for new form section on web page. h1 tag used to make new header for new section, content labeled "Checkboxes & Radio Buttons"-->    
         <h1>Checkboxes & Radio Buttons</h1>
 
+<!--form element used to create forms on a website, always followed up by action attribute and value in between ""
+    for ex: "/birds" is part of the code that will transfer data from the home page to root page
+    <input> tag used to create prompt for end user to input data. "type" attribute dictates what kind of input data used, value is checkbox to indicate that this input form is a check box
+    "name" attribute used again to title form, to be shown in URL form data, value = agrees_tos, "id" attribute matches the "for attribute"
+    <label> tag used to create a visible label on web page for end user to see; it comes w/ "for" attribute which is value that can be named to dev's liking. Content in white is the actual caption -->        
         <form action="/birds">
             <input type="checkbox" name="agree_tos" id="agree">
             <label for="agree">I agree to everything</label>
 
+<!--<label> tag matched w/ "for" attribute to bond with each relative "id" attribute within each different <input> elements. Label contents consists of Small, Medium, and Large
+Each label also has different values, under "input value" attribute; and "type" attribute used to indicate input form to be a radio button, shown on web page once rendered-->
             <p>
                 <label for="s">Small</label>
                 <input type="radio" name="size" id="s" value="s">
 
                 <label for="m">Medium</label>
+                <input type="radio" name="size" id="m" value="m">
 
                 <label for="l">Large</label>
-
-
+                <input type="radio" name="size" id="l" value="l">
 
 
             </p>
+       
+<!--paragraph tag used to make a visual break to section off next form--> 
+            <p>
 
-        </form>
+<!--<label> tag matched w/ "for" attribute to bond with each relative "id" attribute within each different <input> elements. Label contents consists prompting Q, "What is ur fav color?
+    <select> tag used to create a pull down menu on web page for end user to select an option, given through <option> tags
+    <option> tags have "value" attribute, where dev can input the options, content will be caption for those options-->                
+                <label for="colors">What is your favorite color?</label>
 
+                <select name="colors" id="colors">
+                    <option value="Red">Red</option>
 
+                    <option value="Blue">Blue</option>
 
+                    <option value="Green">Green</option>
+                </select>
+            </p>
 
+<!--paragraph tag used to make a visual break to section off next form-->        
+<p>
 
-    </section>        
-
-
-
+<!--<label> tag matched w/ "for" attribute to bond with each relative "id" attribute within each different <input> elements. Label contents consists "Sharon's Scrollbar"
+"sbar" is the value tied to both "for" & "id" attribute, <input> tag used with "type" attribute value of range to create an interactive scrollbar
+"min" & "max" attributes have numerical value > or = to 0, to set numerical limit on scrollbar that users can move point on-->    
+    <label for="sbar">Sharon's Scrollbar</label>
     
+    <input type="range" id="sbar" min="0" max="25" name="scrollbar">
+
+</p>
+
+
+<!--paragraph tag used to make a visual break to section off next form-->     
+<p>
+
+<!--<label> tag matched w/ "for" attribute to bond with each relative "id" attribute within <textarea> tag
+    <textarea> tag forms a text box for end user to input text in, the tag has attributes: "row" & "cols" to input numeric value > 0 to change box dimensions-->    
+    <label for="requests">Type In Special Requests</label>
+    <textarea id="requests" name="textArea" rows="15" cols="15" placeholder="Type Here"></textarea>
+
+</p>
+
+<!--<button> tag labeled w/ content "Done", interactive button for end user to press, to submit input data from within this form-->
+    <button>Done</button>
+</form>
+
+</section>       
+<hr>
+
+<!--new section indicated by new opening <section> tag, and <hr> tag used to create thematic break on webpage-->
+<section>
+
+<!--form element used to create forms on a website, always followed up by action attribute and value in between ""
+    for ex: "/bananas" is part of the code that will transfer data from the home page to root page-->    
+<form action="/bananas">
+
+<!--<label> tag matched w/ "for" attribute to bond with each relative "id" attribute within each different <input> elements. Label contents consists of "Texbox"
+    "for" attribute & "id attribute" both have the same value = "sharon"
+    "type" attribute dictates what type input fx and data is used, in this case, the value is text
+    "name" attribute titles the form, and will show up in URL form data, once data is submitted
+    "required" attribute places rule on this particular <input> tag fx, for the end user to be required to input that data info; info will not be submitted if end user does not input info-->
+    <label for="sharon">Textbox</label>
+    <input type="text" name="textBox" id="sharon" required>
+
+<!--<label> tag matched w/ "for" attribute to bond with each relative "id" attribute within each different <input> elements. Label contents consists of " Limited Password"
+    "for" attribute & "id attribute" both have the same value = "password"
+    "type" attribute dictates what type input fx and data is used, in this case, the value is text
+    "minlength" & "maxlength" attributes have value inputs that are numerical of >1 for character limit restriciton-->
+    <label for="password">Limited Password</label>
+    <input type="text" name="pword" id="password" minlength="5" maxlength="13">
+
+    <p>
+    
+<!--<input> tag used to set up "type" attribute of email value, "required" attribute used, meaning website will prompt end user to input text email data
+    data will not be submitted unless the data input type matches that of the "type" attribute value-->        
+        <input type="email" required>
+        
+    </p>
+
+<!--button tag used to create interactive button
+    "type" attribute used to indicate value of submit being used. The fx of this button, will submit all data that was input within the content of this form
+    labeled value "Validation Button"-->
+        <button type="submit">Validation Button</button>    
+
+</form>    
+
+</section>
 
 </body>
 </html> 
