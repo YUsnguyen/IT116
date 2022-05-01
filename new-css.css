@@ -1,0 +1,48 @@
+/*"h1" selector is used to reference & edit <h1> tag in html file/edit web page's header
+  "color" property name is used to changed header text color to green
+   propert value of the specific color, "green" is used to signify which color text it is 
+   property value and property name, are both within the CSS declaration block*/
+    
+h1{
+
+   color:green; 
+
+}
+
+/*"h2" selector is used to reference & edit <h2> tag in html file/edit web page's header
+  "color" property name is used to changed header text color to pink
+   property value of the specific color, "pink" is used to signify which color text it is 
+   property value and property name, are both within the CSS declaration block*/
+
+h2{
+
+color:purple;
+
+}
+
+/*"p" selector is used to reference & edit paragraph portion of web page, and to the <p> tag within the html file
+   "color" property name is used to changed header text color to pink
+   property value of the specific color, "pink" is used to signify which color text it is 
+   property value and property name, are both within the CSS declaration block
+   the semi-colon is used to separate 2 diff declarations as per proper syntax, w/in the same block
+   the 2nd declaration has property name: "background-color" which changes text w/in the "p" selector to diff background color*/
+
+p{
+
+color:pink;
+background-color:cornflowerblue;
+
+}
+
+/*"button" selector us used to reference & edit the <button> tag, and button on web page
+  "color" property name is used to changed header text color to pink
+   property value of the specific color, "white" is used to signify which color text it is 
+   property value and property name, are both within the CSS declaration block
+   the semi-colon is used to separate 2 diff declarations as per proper syntax, w/in the same block
+   the 2nd declaration has property name: "background-color" which changes text w/in the "button" selector to diff background color */
+button{
+
+color:white;
+background-color:blue;
+
+}
