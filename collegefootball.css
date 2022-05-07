@@ -1,0 +1,46 @@
+/*class selector for "post", changes 1 & 5 to property:color, value:crimson*/
+.post{
+    color:crimson;
+}
+
+/*class selector for "green", changes 2 & 8 to property:color, value:green */
+.green{
+    color:green;
+
+}
+
+/*ID selector for "yellow", changes 3 to property:color, value: hex code for maize*/
+#yellow{
+ 
+color:#FBEC5D;
+
+}
+
+/*class selector for "red", changes 4, 6, and 8 to property:color, value:red*/
+.red{
+
+    color:red;
+
+}
+
+/*ID selector for id="orange", changes 7 to property:color, value: hex code for burnt orange*/
+#orange{
+
+    color:#CC5500;
+
+}
+
+/*ID selector for green button, id="right", properties:background-color and color, values:green and white */
+#right{
+
+    background-color:green;
+    color:white;
+
+}
+
+/*ID selector for red button, id="wrong", properties:background-color and color, values:red and white*/
+#wrong{
+
+    background-color:red;
+    color:white;
+}

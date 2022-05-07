@@ -1,0 +1,93 @@
+/* universal selector is "*" */
+
+/* * {
+    color:pink;
+    background-color:green;
+
+} */
+
+/*type selector */
+body {
+
+    background-color:beige;
+
+}
+
+/* ID selector? */
+button {
+
+    font-size:30px;
+    
+}
+
+/*multiple selector*/
+h1,h2{
+
+    color:crimson;
+
+}
+
+/*ID selector*/
+#signup {
+
+    background-color:pink;
+    color:blue;
+
+}
+
+/*class selector */
+.tag{
+
+    color:chartreuse;
+
+}
+
+/*  class descendent selectors */
+.post a{
+
+    color:purple;
+
+}
+
+/*descendent selectors */
+footer > a{
+
+    color:orange;
+
+}
+
+/* attribute selector */
+a[href*="google"] {
+
+    color:darkolivegreen;
+
+}
+
+/*pseudo classes */
+button:hover {
+
+    background-color: aquamarine;
+    color: red
+
+}
+
+/* nested pseudo class */
+.post button:active{
+
+    background-color: green;
+    
+}
+
+/* pseudo elements, change the h2 tags' first letter*/
+h2::first-letter{
+
+    font-size:50px;
+
+}
+
+/*pseudo element */
+p::first-line{
+
+    color:green;
+
+}
