@@ -5,80 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Selectors</title>
-<!---->    
+<!--<link> tag creates a link for code files to reference external links, through href attribute value "filename.example"
+    rel attribute to refernce file to CSS stylesheet, shows the relation of this file to the external file-->    
     <link rel="stylesheet" href="messageboard1.css">
 
 </head>
 <body>
-    <!---->
+    <!--<nav> tag formats links/textfields to be in the navigation section of browser page
+        objects are nested within the <nav> tag to be located in this section -->
     <nav>
 
+    <!--<label> tag with for attribute value "search", content label Search (in white)
+        <input> tag binded to <label> by matching id attribute value "search", type attribute value "text" creates a textfield
+        placeholder attribute value "Search" creates an opaque caption within the textfield -->    
         <label for="search">Search</label>
         <input type="text" placeholder="Search" id="search">
 
+    <!--<input> tag  with type attribute value "password" and placeholder attribute value "Password
+        <button> tag to create a button, captioned by content "Log In" (in white)-->    
         <input type="password" placeholder="Password">
         <button>Log In</button>
 
+    <!--<button> tag with id attribute value "signup" to create reference for CSS ID selector #signup
+        content caption "Sign Up" (in white)-->    
         <button id="signup">Sign Up</button>
     </nav>
 
-    <!---->
+    <!--<main> tag to make main section for content in browser page
+        <h1> tag to create biggest header for web page
+        message board content is nested within <main>-->
     <main> 
 
         <h1>This is a Message Board</h1>
 
-        <!---->
+        <!--<section> tag created to make separate posts in message bored with class attribute value "post" to reference CSS class selector .post-->
                 <section class="post">
+                    <!--<span> tag used to mark up part of code
+                        <a> tag used with href attribute to create special link through value identifior relative to the username, shown in content "LeeRoyJenkins23"
+                        <h2> tag to create user post comment, seen in content
+                        <button> tag to create a vote/like button for comment, caption seen in content-->
                     <span>Posted by <a href="1234">/LeeRoyJenkins23</a></span>
                     <h2>Moles are ugly animals. That's a hill I'm willing to die on.</h2>
                     <button>+Vote</button>
+                    <!--<hr> tag to create thematic break, and separate different posts-->
                     <hr>
     
                 </section>
     
+                <!--<span> tag used to mark up part of code
+                        <a> tag used with href attribute to create special link through value identifior relative to the username, shown in content "MoleLady"
+                        <h2> tag to create user post comment, seen in content
+                        <span> tag with class attribute value "tag" to create CSS class selector .tag for content ">:C" in white    
+                        <button> tag to create a vote/like button for comment, caption seen in content-->
                 <section class="post">
-                    <span>Posted by <a href="1234">/MoleLady</a></span>
+                    <span>Posted by <a href="1264">/MoleLady</a></span>
                     <h2>Moles are highly underrated. Youre a hater! <span class="tag">:C</span> </h2>
                     <button>+Vote</button>
+                    <!--<hr> tag to create thematic break, and separate different posts-->
                     <hr>
     
                 </section>
     
+                 <!--<span> tag used to mark up part of code
+                        <a> tag used with href attribute to create special link through value identifior relative to the username, shown in content "LeeRoyJenkins23"
+                        <h2> tag to create user post comment, seen in content
+                        <button> tag to create a vote/like button for comment, caption seen in content-->
                 <section class="post">
-                    <span>Posted by <a href="129934">/LeeRoyJenkins23</a></span>
+                    <span>Posted by <a href="1234">/LeeRoyJenkins23</a></span>
                     <h2>You're crazy, lady. <span class="tag">:C</span> </h2>
                     <button>+Vote</button>
+                    <!--<hr> tag to create thematic break, and separate different posts-->
                     <hr>
                 </section>
             
     </main>
-     
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-     </p>
+
+    <!--<p> tag used to separate a paragraph of text, seen in content-->
+    <p>
         
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        
+    </p>
+     
+    <!--<footer> element used to format footer of web content/document
+        <nav> element used to create a navigation section in web browser
+        <ul> list nested within <nav> to create an unordered list w/ <li> tag-->
     <footer>
 
         <nav>
 
-          
 
             <ul>
 
+                <!--<li> tag to create bullet point item that is a hyperlink 
+                    <a> tag used with href attribute to create hyperlink through value, and caption "Home" in content-->
                 <li>
                     <a href="#home">Home</a>
                 </li>
 
+                <!--<li> tag to create bullet point item that is a link 
+                    <a> tag used with href attribute to create hyperlink through value, and caption "About" in content-->
                 <li>
                     <a href="#about">About</a>
                 </li>
 
+                 <!--<li> tag to create bullet point item that is a link 
+                    <a> tag used with href attribute to create hyperlink through value, and caption "Contact" in content-->
                 <li>
                     <a href="#contact">Contact</a>
                 </li>
 
+                 <!--<li> tag to create bullet point item that is a link 
+                    <a> tag used with href attribute to create hyperlink through URL value, and caption "Google" in content-->
                 <li>
                     <a href="https://www.google.com">Google</a>
                 </li>
@@ -87,6 +128,7 @@
 
         </nav>
 
+        <!--<a> tag used with href attribute to create hyperlink through URL value, and caption "Link to Nintendo" in content-->
         <a href="www.nintendo.com">Link to Nintendo</a>    
     </footer>
 

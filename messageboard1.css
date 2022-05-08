@@ -1,4 +1,6 @@
-/* universal selector is "*" */
+/* universal selector is "*"
+  changes all of web page's text color to pink through property:color value:pink
+  changes all of web page's background color to green through property:background-color value:green */
 
 /* * {
     color:pink;
@@ -6,28 +8,31 @@
 
 } */
 
-/*type selector */
+/*type/group selector changes <body>/body selector to beige background color */
 body {
 
     background-color:beige;
 
 }
 
-/* ID selector? */
+/* type/group selector changes all <button>/button selector to property:font-size, value:30px */
 button {
 
     font-size:30px;
     
 }
 
-/*multiple selector*/
+/*multiple selector used to assign CSS rules to multilple elements: h1,h2
+    h1, h2 changes text color to propery:color value:crimson*/
 h1,h2{
 
     color:crimson;
 
 }
 
-/*ID selector*/
+/*ID selector signified by # , immediately followed by value of ID attribute that is being referenced to in HTML, speficially "signup" 
+  declaration/CSS rule #1: changes background color of button to property:background-color value:pink
+  declaration/CSS rule #2: changes text color of button caption to property:color value:blue */
 #signup {
 
     background-color:pink;
@@ -35,35 +40,42 @@ h1,h2{
 
 }
 
-/*class selector */
+/*class selector signified by . , immediately followed by value of class attribute that is being referenced to in HTML, specifically "tag"
+  declaration/CSS rule: changes specific text, ":C" that is wrapped by <span> tag and has the "tag" attribute value to property:color value:chartreuse*/
 .tag{
 
     color:chartreuse;
 
 }
 
-/*  class descendent selectors */
+/*  class descendent selectors, signified by class selector that is followed by the descendent tag that is being referenced to
+    .post selector refrences "post" class attribute value, and a for <a> tag that is nested within the class selector
+    changes the content in the <a> tag, hyperlinked usernames' text color to, property:color value:purple */
 .post a{
 
     color:purple;
 
 }
 
-/*descendent selectors */
+/*descendent selectors are more straight to the point, refrencing to the <a> tag that is nested w/in the <footer> tag
+  changes hyperlink's text color to property:color value:orange */
 footer > a{
 
     color:orange;
 
 }
 
-/* attribute selector */
+/* attribute selector: syntax of: element[attribute]*="attribute content"]
+  changes the <a> tag hyperlink's text color to property:color value:darkolivegreen */
 a[href*="google"] {
 
     color:darkolivegreen;
 
 }
 
-/*pseudo classes */
+/*pseudo classes: references to HTML tag/selector ( <button ) followed one colon, followed by a pseudo class which defines an action to the selector (hover) which activates CSS rules when hovered over
+  CSS rule/dedication #1: changes button background color w/ property:background-color value:aquamarine
+  CSS rule/dedication #2: changes button text color w/ property:color value:red */
 button:hover {
 
     background-color: aquamarine;
@@ -71,21 +83,25 @@ button:hover {
 
 }
 
-/* nested pseudo class */
+/* nested pseudo class: targets selectors (button) w/in a class (.post) that is nested
+   followed by one colon, followed by pseudo class (active) which activates the CSS rule when clicked
+   changes button background when clicked to property:background-color property:red */
 .post button:active{
 
-    background-color: green;
+    background-color: red;
     
 }
 
-/* pseudo elements, change the h2 tags' first letter*/
+/* pseudo element: changes the h2 selector first letter's font size through pseudo element,first-letter, preceded by two semicolons
+   property:font-size value:50px */
 h2::first-letter{
 
     font-size:50px;
 
 }
 
-/*pseudo element */
+/*pseudo element: changes the p selector's first line to different text color through pseudo element, first-line, preceded by two semicolons
+  property:color value:green */
 p::first-line{
 
     color:green;
