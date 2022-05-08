@@ -1,0 +1,20 @@
+/*descendent selector: <h1> as selector and <a> as descendant
+  changes all hyperlinked content text color and font size 
+  CSS rule/declaration #1: property:color value:indigo
+  CSS rule/declaration #2: property:font-size value:30px */
+h1>a{
+    color:indigo;
+    font-size:30px;
+}
+
+/*class descendent selector: class attribute "schools" as selector signified as .schools, followed by descendent for <a> signified as a
+  changes hyperlinks' text color within <a> tag to property:color value:cyan */
+.schools a{
+    color:cyan;
+}
+
+/*class descendent selector: class attribute "hobbies" as selector signified as .hobbies, followed by descendent for <a> signified as a
+  changes hyperlinks' text color within <a> tag to property:color value:pink */
+.hobbies a{
+    color:pink;
+}

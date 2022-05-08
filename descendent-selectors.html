@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <!--<link> tag creates a link for code files to reference external links, through href attribute value "filename.example"
+    rel attribute to refernce file to CSS stylesheet, shows the relation of this file to the external file-->  
+    <link rel="stylesheet" href="descendent-selectors.css">
+</head>
+<body>
+
+    <!--<h1> tag to create headers of 3 hyperlinks, created through <a> tag and href attribute of different values relative to different links
+        caption contents different for each hyperlink page, being: Home, Contact, About-->
+    <h1><a href="home">Home</a> <a href="contact">Contact</a> <a href="about">About</a></h1>
+
+    <!--<p>tag to use class attribute for CSS stylesheet to reference and create CSS rules for in descendent selectors
+        class attribute value for this is "schools" as I will change these colors as the same in the next third paragraph-->
+    <p class="schools">
+
+    <!--<span> tag used to nest anchored href attribute "moop" to create hyperlink descendent selector to be refrenced to in CSS stylesheet--> 
+        <span>
+            My favorite subjects are <a href="moop">uncolonized history</a> and <a href="moop">english</a>
+        </span>   
+        
+    </p>
+
+ <!--<p>tag to use class attribute for CSS stylesheet to reference and create CSS rules for in descendent selectors
+        class attribute value for this is "hobbies" as it will have set of different rules-->
+    <p class="hobbies">
+
+         <!--<span> tag used to nest anchored href attribute "woop" to create hyperlink descendent selector to be refrenced to in CSS stylesheet-->
+        <span>
+            My favorite hobbies are <a href="woop">gaming</a> and <a href="woop">singing</a>
+        </span>
+
+    </p>
+
+     <!--<p>tag to use class attribute for CSS stylesheet to reference and create CSS rules for in descendent selectors
+        class attribute value for this is "schools" as I will change these colors as the same in the first paragraph-->
+    <p class="schools">
+
+         <!--<span> tag used to nest anchored href attribute "qoop" to create hyperlink descendent selector to be refrenced to in CSS stylesheet-->
+        <span>
+            I went to school in the <a href="qoop">Bay Area</a> and <a href="qoop">Tampa Bay Area</a>
+        </span>
+
+    </p>
+
+</body>
+</html>
