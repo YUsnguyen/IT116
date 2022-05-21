@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Name of tab using <title> element-->
+    <title>Which Pill Do You Choose</title>
+
+    <!--<link> tag with href attribute to attach CDN URL to bootstrap library/CSS stylesheet to html file
+        This allows for dev to utilize that library for their website, specific to CDN file. Nested in the <head> tag for quicker rendering -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+
+   
+    <section>
+
+        <!--<h1> tag used to create header, content caption shown on browser page "The Matrix"
+            Used <h1> class identifier to add the following classes:
+                - "display-4" is a typography class that changes the attached element, in this case display class specifically changes headings to bootstrap's specific heading design, 4 is the numerical value to dictate size of the heading  
+                - "text-center" is a text-alignment class, that dictates how the attached element is aligned, in this case, the center
+                - "text-light" is a color utility class that changes color of the text by color utilities, in this case, light
+                - "bg-dark" is another color utility class that changes background text color -->
+        <h1 class="display-4 text-center text-light bg-dark">The Matrix</h1>
+
+
+        <!--<div> tag used to format a new container, with class identifier attached to add the following bootstrap classes:
+            - "alert" is a class type used to create an text alert on the page, accompanied with a background
+            - "alert-danger" is a contextual class that changes the color of the alert's text and bg to red
+            - "text-center" is a text-alignment class, that dictates how the attached element is aligned, in this case, the center
+            - role attribute w/ "alert" value to display that the alert is indeed an alert, role attributes are used to for accessibility reasons
+          Content caption: "Are you going to choose the blue pill or red pill" seen on browser page within the alert styling and container-->
+        <div class="alert alert-danger text-center" role="alert">
+
+            Are you going to choose the blue pill or red pill?
+
+        </div>
+
+        <!--Another <div> tag to format a new container for the button components, class identifier used to attach the "text-center" class to align buttons in the center
+            Two separate <button> tags used to create two separate buttons
+            Button #1: caption content "Take Blue Pill",utilizes class identifier to add the following bootstrap classes:
+                    - "btn" compotent class to create a button
+                    - "btn-primary" class to create a blue button, noted by primary
+             Button #2: caption content "Take Red Pill",utilizes class identifier to add the following bootstrap classes:
+                    - "btn" compotent class to create a button
+                    - "btn-danger" class to create a red button, noted by danger    -->
+
+        <div class="text-center">
+
+            <button class="btn btn-primary">Take Blue Pill</button>
+            <button class="btn btn-danger">Take Red Pill</button>
+
+
+        </div>
+
+    </section>
+    
+</body>
+</html>
