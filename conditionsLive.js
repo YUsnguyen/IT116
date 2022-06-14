@@ -1,83 +1,85 @@
-// console.log("Hello world");
+ console.log("Hello world");
 
 // //declaring variable randomNumber, using fx of Math.random() to generate a random number when variable is called
-// let randomNumber = Math.random();
+let randomNumber = Math.random();
 // //console.log used w/ declared variable to output a random number w/ the fx 
-// console.log(randomNumber);
+console.log(randomNumber);
 
 // //practice if Statement, declared variable w/in condition parameters of "randomNumber <0.5
 // //condition states that if random number that is generated is less than 0.5, to run code in lines 12 & 13
-// if (randomNumber <0.5) {
+if (randomNumber <0.5) {
 
-//     console.log("Hello Sharon");
-//     console.log(randomNumber);
-// }
+    console.log("Hello Sharon");
+    console.log(randomNumber);
+}
 
 
 // use relational operator of ">=" greater than or equal to for the variable to output line 20
-// if (randomNumber >= 0.5){
-//     console.log('Random number is greater than 0.5');
-//     console.log(randomNumber);
-// }   
+if (randomNumber >= 0.5){
+    console.log('Random number is greater than 0.5');
+    console.log(randomNumber);
+}   
 
 //declare constant variable as 'dayOfWeek', to put into if/else if statments' conditions
 //run console.log message dependent on the variables being run in if/else statements is true to the declared variable
 //usage of strict equality comparison operator ===
-// const dayOfWeek = 'Thursday';
+const dayOfWeek = 'Thursday';
 
-// if (dayOfWeek === 'Monday') {
+if (dayOfWeek === 'Monday') {
     
-//     console.log('This is Monday');
+    console.log('This is Monday');
     
-// }else if (dayOfWeek === 'Thursday') {
+}else if (dayOfWeek === 'Thursday') {
 
-//     console.log('This is Thursday');
+    console.log('This is Thursday');
 
-// }else if (dayOfWeek === 'Saturday') {
+}else if (dayOfWeek === 'Saturday') {
 
-//     console.log('Hurray! Today is Saturday');
-// }
+    console.log('Hurray! Today is Saturday');
+}
 
 //declare constant variable of age w/ 'prompt' window object method to show the input string value
 // if/else statements user input variables for age, each statement using a relational operator
 //dependent on the user input age, console.log will run a different string message
 // else statement used if all prior conditions are false, will run a default output
-// const age = prompt('Enter an Age to Drive!');
 
-// if (age < 5){
+const age = prompt('Enter an Age to Drive!');
 
-//     console.log("You are less than 5. Cmon bro.");
+if (age < 5){
 
-// }else if (age < 10) {
-//     console.log("Still too young!");
+    console.log("You are less than 5. Cmon bro.");
 
-// }else if (age >= 16) {
+}else if (age < 10) {
+    console.log("Still too young!");
 
-//     console.log("You are able to drive!");
-// }else {
-//     console.log("Default message if all prior conditions are false/fails")
-// }
+}else if (age >= 16) {
 
-// const expr = 'Mangoes';
+    console.log("You are able to drive!");
+}else {
+    console.log("Default message if all prior conditions are false/fails")
+}
+
+const expr = 'Mangoes';
 
 // //switch statements are similar/cleaner way to run if/else type of code
 // // declared expr variable w/ constant, and runs each code block dependent on variable value of fruit name
 // //break statement used to break execution of code in switch statements, in this situation after each case
-// switch (expr) {
 
-//     case 'Oranges':
-//         console.log("Oranges are $0.59 a pound");
-//         break;    
-//     case 'Mangoes':
-//         console.log("Hello Mangos!");
-//         break;
-//     case 'Papayas':
-//         console.log("Hello Papayas");
-//         break;
-//     default:
-//         console.log("Sorry, we are out of your asked item.");
+switch (expr) {
+
+    case 'Oranges':
+        console.log("Oranges are $0.59 a pound");
+        break;    
+    case 'Mangoes':
+        console.log("Hello Mangos!");
+        break;
+    case 'Papayas':
+        console.log("Hello Papayas");
+        break;
+    default:
+        console.log("Sorry, we are out of your asked item.");
     
-// }
+}
 
 //declared constant variable of 'password' to create a prompt method to input password w the following string message
 // if/else statment used to dictate rules for password input through conditions/properties of password.length & password.indexOf
